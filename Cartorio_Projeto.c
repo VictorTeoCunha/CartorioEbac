@@ -136,7 +136,8 @@ int main()
 		printf ("Escolha a opção deseja do menu:\n\n"); 
 		printf ("\t1 - Registrar nomes;\n");// \t = espaçamento de paragrafo
 		printf ("\t2 - Consultar nomes;\n");
-		printf ("\t3 - Deletar nomes.\n\n");  
+		printf ("\t3 - Deletar nomes;\n");  
+		printf ("\t4 - Sair do sistema.\n\n");
 		printf ("Opção: ");// Fim do Menu
 		
 		scanf("%d", &opcao); // %d = armazenamento da variável tipo INT &variavel (para dizer onde é para armazenar a informação)
@@ -156,6 +157,11 @@ int main()
 			
 			case 3:
 				DeletarNomes();
+			break;
+			
+			case 4:
+				printf ("Obrigado por usar nosso sistema!");
+				return 0; // return 0 é utilizado para quebrar a função e finalizar o programa
 			break;
 			
 			default:
